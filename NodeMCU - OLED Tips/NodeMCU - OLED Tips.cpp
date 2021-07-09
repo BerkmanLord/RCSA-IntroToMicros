@@ -32,7 +32,12 @@ void setup(){
     for(;;); // Don't proceed if OLED is not Detected, loop forever
   }
 
-  
+}
+
+void loop(){
+
+for (int carLocation = 0; carLocation < 128; carLocation++) {
+
           display.clearDisplay();
           display.setTextColor(WHITE);
             display.setCursor(10,0);
@@ -43,11 +48,10 @@ void setup(){
             display.print(stringText);
             display.setCursor(5,31);
             display.print(integerNumber);
-            display.drawBitmap(56, 35, custom_icon, 32, 32, 1);
+            display.drawBitmap(carLocation, 35, custom_icon, 32, 32, 1);
           display.display();
-
 }
 
-void loop(){
+
 
 }
