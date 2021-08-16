@@ -122,7 +122,7 @@ void loop() {
 
     //Displaying humidity error.
     display.setTextSize(1);
-    display.setCursor(0,0);
+    display.setCursor(0,11);
     display.print("Hum. Error!");
   }
   else {
