@@ -112,7 +112,7 @@ R"(
 
 void redFunction()
 {
-  int value1 = 100 - server.arg("state1").toInt();
+  int value1 = server.arg("state1").toInt();
   value1 = map(value1, 0, 100, 0, 255);
 
      analogWrite(red, value1);//change the brightness of red
@@ -122,7 +122,7 @@ void redFunction()
 
 void greenFunction()
 {
-  int value2 = 100 - server.arg("state2").toInt();
+  int value2 = server.arg("state2").toInt();
   value2 = map(value2, 0, 100, 0, 255);
 
      analogWrite(green, value2);//change the brightness of green
@@ -132,7 +132,7 @@ void greenFunction()
 
 void blueFunction()
 {
-  int value3 = 100 - server.arg("state3").toInt();
+  int value3 = server.arg("state3").toInt();
   value3 = map(value3, 0, 100, 0, 255);
 
      analogWrite(blue, value3);//change the brightness of blue
